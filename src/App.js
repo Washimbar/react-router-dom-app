@@ -1,19 +1,27 @@
-import './App.css';
-import Blogs from './pages/Blogs';
+import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home';
-import Contact from './pages/Contact';
+import './App.css'
 
-function App() {
+import Blogs from './pages/Blogs.js'
+import Contact from './pages/Contact.js'
+import Home from './pages/Home.js'
+import NavBar from './pages/NavBar'
+
+
+const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/blogs' element={<Blogs/>}/>
-        <Route path='/contact' element={<Contact />}/>
-      </Routes>
-    </BrowserRouter>
-  );
+    <div className='App'>
+      <h1>Welcome</h1>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/blogs' element={<Blogs />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
 
-export default App;
+export default App
