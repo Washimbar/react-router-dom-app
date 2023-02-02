@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(120, 105, 120);
+    background-color: rgb(158, 20, 158);
     font-size: 20px;
     font-weight: bold;
     display: flex;
@@ -20,7 +20,8 @@
 
 }
 .navLink:hover{
-    background-color: rgb(33, 189, 46);
+    background-color: rgb(189, 2, 246);
+    color: rgb(223, 255, 80);
 }
 nav .active{
     background-color: rgb(19, 233, 19);
